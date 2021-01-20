@@ -49,7 +49,7 @@
     }
     .menu{
         display:flex;
-        position: fixed;
+        position: absolute;
         right: 0;
     }
     .shownav{
