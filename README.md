@@ -1,4 +1,15 @@
-# React Ui Project for Login & SignUp Page
+
+
+ <img alt="GitHub followers" src="https://img.shields.io/badge/open%20source-Coding%20Social%20Media-brightgreen">
+ <br>
+ <hr>
+
+# Read The Idea About📱
+
+```
+## React  Project for Coders own social-media like  Facebook  where user can post a post open source coding tutorial like {image,code,or video} .and we can like the post and share the post....Become a owner of this please fork it and help me to build
+```
+
 
 
 ## dependencies ▶
