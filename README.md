@@ -6,9 +6,9 @@
 
 # Read The Idea About📱
 
-```
-## React  Project for Coders own social-media like  Facebook  where user can post a post open source coding tutorial like {image,code,or video} .and we can like the post and share the post....Become a owner of this please fork it and help me to build
-```
+
+### React  Project for Coders own social-media like  Facebook  where user can post a post open source coding tutorial like {image,code,or video} .and we can like the post and share the post....Become a owner of this please fork it and help me to build
+
 
 
 
