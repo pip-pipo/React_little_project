@@ -1,31 +1,14 @@
-import firebase from './firebase'
+import Firebase from './Services/firebase'
 
-const db = firebase.ref("/comment");
-
-const getAll =()=>{
-    return db
-}
-
-const create =(data)=>{
-    return db.add(data)
-}
-
-const update=(id,value)=>{
-    return db.doc(id).update(value)
-}   
-
-
-const remove =(id)=>{
-    return db.doc(id).delete();
+const getAll = (email,password) => {
+    Firebase.auth().createUserWithEmailAndPassword(email,password).then(()=> alert('accout successfullt created')).catch(err=>console.log(err))
 }
 
 
 
-const commentServices ={
+const commentServices = {
     getAll,
-    create,
-    update,
-    remove
+    
 }
 
 export default commentServices

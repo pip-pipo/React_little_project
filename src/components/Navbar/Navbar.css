@@ -3,6 +3,9 @@
     justify-content: space-around;
     align-items: center;
 }
+.bg_dark{
+    background: #00264D !important;
+}
 .navBar__middle ul{
     display: flex;
     justify-content: space-between;
@@ -16,10 +19,20 @@
 .navLink{
     margin: 0px 20px;
     text-decoration: none;
+    color: white;
+}
+.navLink:hover{
+    text-decoration: none;
+    color: rgb(7, 182, 21);
 }
 
 .menu{
-    display:none
+    display:none;
+    color:white
+}
+.menu:hover{
+
+    color: rgb(7, 182, 21);
 }
 
 
@@ -52,7 +65,8 @@
         position: absolute;
         right: 0;
     }
-    .shownav{
+ 
+ .shownav{
         display: flex;
         margin:0px 10px;
     }
