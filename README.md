@@ -1,19 +1,81 @@
+<h1 align="center">React_social_media_platform</h1>
+
+<div align="center" id="top"> 
+  <img src="./src/components/Img/img.png" alt="React_codeing_social_platform" />
+  &#xa0;
+
+  <!-- <a href="https://react_codeing_social_platform.netlify.app">Demo</a> -->
+</div>
 
 
- <img alt="GitHub followers" src="https://img.shields.io/badge/open%20source-Coding%20Social%20Media-brightgreen">
- <br>
- <hr>
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/pip-pipo/React_little_project?color=56BEB8">
 
-# Read The Idea About📱
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/pip-pipo/React_little_project?color=56BEB8">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/pip-pipo/React_little_project?color=56BEB8">
+
+  <img alt="License" src="https://img.shields.io/github/license/pip-pipo/React_little_project?color=56BEB8">
+
+  <img alt="Github issues" src="https://img.shields.io/github/issues/pip-pipo/React_little_project?color=56BEB8" />
+
+  <img alt="Github forks" src="https://img.shields.io/github/forks/pip-pipo/React_little_project?color=56BEB8" />
+
+  <img alt="Github stars" src="https://img.shields.io/github/stars/pip-pipo/React_little_project?color=56BEB8" />
+</p>
 
 
-### React  Project for Coders own social-media like  Facebook  where user can post a post open source coding tutorial like {image,code,or video} .and we can like the post and share the post....Become a owner of this please fork it and help me to build
+<h4 align="center"> 
+	🚧  React_codeing_social_platform 🚀 Under construction...  🚧
+</h4> 
+
+<hr>
+
+<p align="center">
+  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
+  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
+  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+</p>
+
+<br>
+
+## :dart: About ##
+
+The idea is :fire: lot's of programmer are going to worngtrack by addiction of youtube click missguide ,,,
+we will make a spacific social media where we can post our tutorial and learn about programming some good stuff that ....currently i need someone help to build that please fell free to connect&fork lets build together 
+
+## :sparkles: Features ##
+
+:heavy_check_mark: Programming Related Post   PostCrate , Edit , Update , Delete;\
+:heavy_check_mark: User Authentication With Firebase Also(GooglePopUp signin,FacebookPopUp signin);\
+:heavy_check_mark: Like post , share post ,Comment  a Post ;
+
+## :rocket: Technologies ##
+
+The following tools were used in this project:
+
+- [Firebase](https://console.firebase.google.com)
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
 
 
+## :white_check_mark: Requirements ##
+
+Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) and [Node](https://nodejs.org/en/) installed.
+
+## :checkered_flag: Starting ##
+
+```bash
+# Clone this project
+$ git clone https://github.com/pip-pipo/React_little_project
 
 
 ## dependencies ▶
-```
+
 {
   "name": "client",
   "version": "0.1.0",
@@ -59,3 +121,14 @@
 }
 
 ```
+
+## :memo: License ##
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+
+Made with :heart: by <a href="https://github.com/pip-pipo" target="_blank">Md Morsalin</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
