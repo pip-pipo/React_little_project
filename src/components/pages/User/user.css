@@ -38,10 +38,10 @@
     color: rgb(7, 182, 21);
 }
 
-.user .user__post__button {
+/* .user .user__post__button {
     border: none;
     outline-width: 0px;
-    font-size: x-large;
+    font-size: 18px;
     padding: 10px;
     background: #116600;
     color: white;
@@ -52,10 +52,33 @@
     right: 0;
 }
 .user .user__post__button:hover { 
-    -webkit-box-shadow: 2px 2px 20px 5px #2AE6FF;
-    box-shadow: 2px 2px 20px 5px #2AE6FF;
+    -webkit-box-shadow: 2px 2px 5px 5px #2AE6FF;
+    box-shadow: 2px 2px 5px 5px #2AE6FF;
+} */
+
+
+.user__button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+.user__button button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 999px;
+    background: transparent;
+    background: #000;
+    color: white;
+    outline-width: 0px;
+    transition: linear all 600ms;
+}
+.user__button button:hover{
+    background: #00151A;
+    border-color: #116600;
 }
 
+/* 600px media scrren */
 @media screen and (max-width:600px) {
     .user {
         width: 300px;
@@ -105,22 +128,25 @@
     .user__middle ul li:hover {
         color: rgb(7, 182, 21);
     }
-    .user .user__post__button {
-        border: none;
-        outline-width: 0px;
-        font-size: 18px;
-        padding: 8px;
-        background: #116600;
-        color: white;
-        border-radius: 999px;
-        transition: linear all 500ms;
-        position: absolute;
-        top: 0;
-        right: 0;
+    .user__button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px 0px;
     }
-    .user .user__post__button:hover { 
-        -webkit-box-shadow: 2px 2px 20px 5px #2AE6FF;
-        box-shadow: 2px 2px 20px 5px #2AE6FF;
+    .user__button button{
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 999px;
+        background: transparent;
+        background: #000;
+        color: white;
+        outline-width: 0px;
+        transition: linear all 600ms;
+    }
+    .user__button button:hover{
+        background: #00151A;
+        border-color: #116600;
     }
 
 }

@@ -84,7 +84,7 @@ const SignUp = () => {
                     <input vlaue={password2} onChange={inputHandle} name="password2" placeholder="Confirm Password" type="password" className="form-control shadow-none" />
                 </div>
                 <button className="btn btn-outline-light shadow-none">Submit</button>
-                <h6 className="mt-3 text-light">Already have an account? <Link to='/login'>Log In</Link> </h6>
+                <h6 className="mt-3 text-light">Already have an account? <Link to='/'>Log In</Link> </h6>
             </form>
         </div>
     )
