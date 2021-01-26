@@ -16,8 +16,12 @@ const NavBar = () => {
             <nav className="navBar__main shadow">
                 <div className="navBar__first">
                     <img className="bg-light rounded mx-3" src="https://res.cloudinary.com/codecaamp/image/upload/v1610815124/Purple_Modern_Technology_Gaming_Logo_mciavh.png" width="80px" height="80px" alt="" />
-                    <img src="https://img.shields.io/github/followers/terrytangyuan.svg?label=GitHub&style=social" alt="" />
+                    <a href="https://github.com/pip-pipo">
+                    <img className="mx-2" src="https://img.shields.io/github/followers/terrytangyuan.svg?label=GitHub&style=social" alt="" />
+                    </a>
+                    <a href="https://github.com/pip-pipo">
                     <img src="https://img.shields.io/twitter/follow/TerryTangYuan?label=Twitter&style=social" alt="Twitter" />
+                    </a>
                 </div>
                 <div className="navBar__middle">
                     <ul>

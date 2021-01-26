@@ -1,0 +1,126 @@
+.user {
+    width: 600px;
+    margin: auto;
+    height: auto;
+    background: #00151A;
+    position: relative;
+    border-radius: 20px;
+    top: 10px;
+    padding: 2rem;
+}
+
+.user__first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user__first img {
+    width: 200px;
+    object-fit: cover;
+    border-radius: 999px;
+}
+
+.user__middle ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__middle ul li {
+    transition: linear all 400ms;
+    margin: 10px 10px;
+}
+
+.user__middle ul li:hover {
+    color: rgb(7, 182, 21);
+}
+
+.user .user__post__button {
+    border: none;
+    outline-width: 0px;
+    font-size: x-large;
+    padding: 10px;
+    background: #116600;
+    color: white;
+    border-radius: 999px;
+    transition: linear all 500ms;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.user .user__post__button:hover { 
+    -webkit-box-shadow: 2px 2px 20px 5px #2AE6FF;
+    box-shadow: 2px 2px 20px 5px #2AE6FF;
+}
+
+@media screen and (max-width:600px) {
+    .user {
+        width: 300px;
+        margin: auto;
+        height: auto;
+        background: #00151A;
+        /* background: #000; */
+        position: relative;
+        border-radius: 20px;
+        top: 10px;
+        padding: 2rem;
+    }
+
+    .user__first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+    .user__first h4 {
+        font-size: 18px;
+        margin: 0px 0px 0px 5px;
+    }
+
+    .user__first img {
+        width: 100px;
+        object-fit: cover;
+        border-radius: 999px;
+    }
+
+    .user__middle ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin-top: 50px;
+    }
+
+    .user__middle ul li {
+        transition: linear all 400ms;
+        margin: 10px 10px;
+    }
+
+    .user__middle ul li:hover {
+        color: rgb(7, 182, 21);
+    }
+    .user .user__post__button {
+        border: none;
+        outline-width: 0px;
+        font-size: 18px;
+        padding: 8px;
+        background: #116600;
+        color: white;
+        border-radius: 999px;
+        transition: linear all 500ms;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .user .user__post__button:hover { 
+        -webkit-box-shadow: 2px 2px 20px 5px #2AE6FF;
+        box-shadow: 2px 2px 20px 5px #2AE6FF;
+    }
+
+}
