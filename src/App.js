@@ -5,20 +5,21 @@ import './App.css'
 import Form from './components/Auth/Form'
 import SignUp from './components/Auth/SignUp'
 import Home from './components/Home'
-
+import Welcome from './components/pages/Welcome'
 const App = () => {
   return (
     <div className="bg_dark">
       <Router>
         <div className="navBar">
-          <Home/>
+          <Home />
         </div>
-        <Switch>
-          <div className="App">
+        <div className="">
+          <Switch>
+            <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/login" component={Form} />
-          </div>
-        </Switch>
+          </Switch>
+        </div>
       </Router>
     </div>
   )
