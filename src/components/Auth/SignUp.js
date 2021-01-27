@@ -47,7 +47,7 @@ const SignUp = () => {
                             }, 1000)
                         } else {
 
-                            Firebase.auth().createUserWithEmailAndPassword(email, password).then(() => history.push('/login')).catch(()=>(setErr("oop's  please try again ")))
+                            Firebase.auth().createUserWithEmailAndPassword(email, password).then(() => history.push('/')).catch(()=>(setErr("oop's  please try again ")))
 
                         }
                     }

@@ -36,7 +36,7 @@ const Form = () => {
             // check the email
             if (re.test(String(email).toLowerCase())) {
                 // signin use with email and password
-                Firebase.auth().signInWithEmailAndPassword(email, password).then(() => { setErr('succesfully account created'); setTimeout(()=>{history.push('/welcome')},1000)   }).catch(err => err)
+                Firebase.auth().signInWithEmailAndPassword(email, password).then(() => { setErr('succesfully account created'); setTimeout(()=>{history.push('/welcome')},1000 ) }).catch((err) =>{setErr('Enter a Valid Email');setTimeout(()=>{setErr('')},1000)})
             } else {
                 setErr("Please fill a valid Email")
                 setTimeout(() => {

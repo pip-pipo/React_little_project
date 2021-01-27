@@ -133,6 +133,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 40px 0px;
+        
     }
     .user__button button{
         padding: 10px;
@@ -140,9 +141,10 @@
         border-radius: 999px;
         background: transparent;
         background: #000;
-        color: white;
+        color: white  !important;
         outline-width: 0px;
         transition: linear all 600ms;
+        
     }
     .user__button button:hover{
         background: #00151A;

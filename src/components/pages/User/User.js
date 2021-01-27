@@ -13,8 +13,8 @@ const User = () => {
     return (
         <div className="text-light user">
             <div className="user__button">
-                <button onClick={Logouthandler} className="user__post__button">Logout</button>
-                <button className="user__post__button">Write Post</button>
+                <button onClick={Logouthandler} className="user__post__button btn">Logout</button>
+                <button className="user__post__button btn">Write Post</button>
             </div>
             <div className="user__first">
                 <img src="https://avatars.githubusercontent.com/u/69667157?s=460&u=b3c95f91be2b4fdbd1ea91cc18ec796fd64268af&v=4" alt="" />
@@ -27,9 +27,6 @@ const User = () => {
                     <li><AiFillGithub fontSize="40px" /></li>
                     <li><AiFillFacebook fontSize="40px" /></li>
                 </ul>
-            </div>
-            <div className="user__last">
-
             </div>
         </div>
     )
