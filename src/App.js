@@ -6,6 +6,7 @@ import Form from './components/Auth/Form'
 import SignUp from './components/Auth/SignUp'
 import Home from './components/Home'
 import Welcome from './components/pages/Welcome'
+import WritePost from './components/pages/WritePost'
 const App = () => {
   return (
     <div className="bg_dark">
@@ -18,6 +19,8 @@ const App = () => {
             <Route exact path="/welcome" component={Welcome} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/" component={Form} />
+            <Route exact path="/write_post" component={WritePost} />
+
           </Switch>
         </div>
       </Router>

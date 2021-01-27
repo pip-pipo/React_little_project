@@ -25,7 +25,7 @@ const NavBar = () => {
                 </div>
                 <div className="navBar__middle">
                     <ul>
-                        <NavLink className="navLink" id="link" to="/login">Log In</NavLink>
+                        <NavLink className="navLink" id="link" to="/">Log In</NavLink>
                         <NavLink className="navLink" id="link" to="/signup">Sign Up</NavLink>
                 {
                     width ?'':<h2 className="menu text-light"><AiOutlineMenu onClick={showMenuItem} /></h2>

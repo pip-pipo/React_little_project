@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@900&family=Oswald:wght@700&display=swap');
+
+.writePost {
+    width: 100%;
+    height: 120vh;
+    color: white;
+    font-family: monospace;
+    font-weight: 900;
+    margin: 20px 0px;
+}
+
+.writePost__wrapper {
+    width: 80%;
+    margin: auto;
+    background: #003333;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.writePost__first h3 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 40px;
+}
+
+.writePost__middle {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.writePost__middle form input {
+    padding: 30px;
+    font: 900;
+    font-size: 30px;
+    background: #003399;
+    color: white !important;
+}
+
+.writePost__middle form input:focus {
+    background: #003399;
+}
+
+.writePost__middle form textarea {
+    padding: 30px;
+    font: 900;
+    font-size: 30px;
+    background: #003399;  color: white !important;
+}
+
+.writePost__middle form textarea:focus {
+
+    background: #003399;
+    color: white !important;
+}
+
+
+.writePost__middle form button {
+    padding: 5px 20px;
+    font-size: 30px;
+    margin: 10px 5px;
+    background: transparent;
+    border-radius: 999px;
+    background: #003399;
+    color: rgb(136, 128, 128);
+    transition: linear all 300ms;
+    outline-width: 0px;
+}
+
+.writePost__middle form button:hover{
+    border-color: aqua;
+    color: white;
+}
+
+
+/* media screen 650px */
+
+@media screen and (max-width:650px){
+    .writePost {
+        width: 100%;
+        height: 120vh;
+        color: white;
+        font-family: monospace;
+        font-weight: 900;
+        margin: 20px 0px;
+    }
+    
+    .writePost__wrapper {
+        width: 90%;
+        margin: auto;
+        background: #003333;
+        border-radius: 10px;
+        padding-top: 10px;
+    }
+    
+    .writePost__first h3 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    
+    .writePost__middle {
+        width: 70%;
+        margin: auto;
+        padding: 10px;
+        font-family: 'Oswald', sans-serif;
+    
+    }
+    
+    .writePost__middle form input {
+        padding: 20px;
+        font: 900;
+        font-size: 20px;
+        background: #003399;
+        color: white !important;
+    }
+    
+    .writePost__middle form input:focus {
+        background: #003399;
+    }
+    
+    .writePost__middle form textarea {
+        padding: 20px;
+        font: 900;
+        font-size: 20px;
+        background: #003399;  color: white !important;
+    }
+    
+    .writePost__middle form textarea:focus {
+    
+        background: #003399;
+        color: white !important;
+    }
+    
+    
+    .writePost__middle form button {
+        padding: 5px 30px;
+        font-size: 20px;
+        margin: 10px 5px;
+      text-align: center;
+        background: transparent;
+        border-radius: 999px;
+        background: #003399;
+        color: rgb(136, 128, 128);
+        transition: linear all 300ms;
+    }
+    
+    .writePost__middle form button:hover{
+        border-color: aqua;
+        color: white;
+    }
+
+}

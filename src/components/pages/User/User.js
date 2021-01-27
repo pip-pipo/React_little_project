@@ -1,5 +1,9 @@
 import React from 'react'
 import './user.css'
+// react router-dom
+import {Link} from 'react-router-dom'
+
+// icons
 import { RiTwitterFill } from "react-icons/ri";
 import { FaInstagramSquare } from "react-icons/fa";
 import { AiFillGithub, AiFillFacebook } from "react-icons/ai";
@@ -14,7 +18,7 @@ const User = () => {
         <div className="text-light user">
             <div className="user__button">
                 <button onClick={Logouthandler} className="user__post__button btn">Logout</button>
-                <button className="user__post__button btn">Write Post</button>
+                <button className="user__post__button btn"> <Link to="/write_post" style={{textDecoration:"none"}}>Write Post</Link></button>
             </div>
             <div className="user__first">
                 <img src="https://avatars.githubusercontent.com/u/69667157?s=460&u=b3c95f91be2b4fdbd1ea91cc18ec796fd64268af&v=4" alt="" />
