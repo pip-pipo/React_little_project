@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import './WritePost.css'
 import { AiOutlineCloudUpload } from "react-icons/ai";
 import { Link } from 'react-router-dom'
@@ -71,10 +71,10 @@ const WritePost = () => {
                         <input type="file" name="file" id="file" hidden />
 
 
-                        <input onChange={inputHandle} value={title} type="text" className="form-control my-3" name="title" placeholder="Enter   Title" />
-                        <input onChange={inputHandle} value={tags} type="text" className="form-control my-3" name="tags" placeholder="Enter   Related Tags" />
-                        <input onChange={inputHandle} value={author} type="text" className="form-control my-3" name="author" placeholder="Enter   Author Name" />
-                        <textarea rows={5} cols={5} style={{whiteSpace:"pre-line"}} id="text-area" aria-label="Post Content" spellCheck="false" onChange={inputHandle} value={blog} type="text-area" className="form-control my-3" name="blog" placeholder="Enter   Your Blog" />
+                        <input onChange={inputHandle} value={title} type="text" className="form-control my-3" name="title" placeholder="  Title" />
+                        <input onChange={inputHandle} value={tags} type="text" className="form-control my-3" name="tags" placeholder="  Related Tags" />
+                        <input onChange={inputHandle} value={author} type="text" className="form-control my-3" name="author" placeholder="  Author Name" />
+                        <textarea rows={5} cols={5} style={{whiteSpace:"pre-line"}} id="text-area" aria-label="Post Content" spellCheck="false" onChange={inputHandle} value={blog} type="text-area" className="form-control my-3" name="blog" placeholder="  Your Blog" />
 
                         <button onClick={submitHandle}> <Link style={{ textDecoration: "none" }} to="/blog">Publish</Link> </button>
                         <button style={{ textDecoration: "none" }} ><Link  to="/welcome">Back To Profile</Link> </button>

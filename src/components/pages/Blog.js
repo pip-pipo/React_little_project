@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './Blog.css'
 import Firebase from '../Services/firebase'
-
+import {Link} from 'react-router-dom'
 const Blog = () => {
     const [value, setValue] = useState([]);
     const [loading, setLoading] = useState(false)
@@ -17,7 +17,6 @@ const Blog = () => {
         Firebase.firestore().collection('posts').doc(id).delete().catch((err) => err)
     }
    
-    
     return (
         <div className="blog  text-light my-4">
             <div className="blog__first w-50 m-auto ">
@@ -35,7 +34,7 @@ const Blog = () => {
                                     <h3 ><span>Blog: </span>{getData.blog}</h3>
                                     <h5 style={{marginTop:'20px'}}><span>Tags: </span>{getData.tags}</h5>
                                     <button style={{outline:"none"}} onClick={() => deleteHandle(getData.id)}>Delete</button>
-                                    <button style={{outline:"none"}} onClick={() => editHandle(getData.id)}>Edit</button>
+                                    <button style={{outline:"none"}}><Link to={`/editBlog/${getData.id}`} style={{textDecoration:"none" ,color:"white"}}>Edit</Link></button>
                                 </div>
                             ))
                         }
