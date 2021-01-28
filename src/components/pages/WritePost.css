@@ -8,6 +8,7 @@
     font-family: monospace;
     font-weight: 900;
     margin: 20px 0px;
+
 }
 
 .writePost__wrapper {
@@ -76,9 +77,8 @@
     color: white;
 }
 
-#text-area{
-    white-space: pre-wrap;
-}
+
+
 /* media screen 650px */
 
 @media screen and (max-width:650px) {
@@ -155,8 +155,6 @@
         border-color: aqua;
         color: white;
     }
-    #text-area{
-        white-space: pre-wrap;
-    }
+  
 
 }
