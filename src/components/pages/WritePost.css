@@ -48,7 +48,8 @@
     padding: 30px;
     font: 900;
     font-size: 30px;
-    background: #003399;  color: white !important;
+    background: #003399;
+    color: white !important;
 }
 
 .writePost__middle form textarea:focus {
@@ -60,7 +61,7 @@
 
 .writePost__middle form button {
     padding: 5px 20px;
-    font-size: 30px;
+    font-size: 20px;
     margin: 10px 5px;
     background: transparent;
     border-radius: 999px;
@@ -70,15 +71,17 @@
     outline-width: 0px;
 }
 
-.writePost__middle form button:hover{
+.writePost__middle form button:hover {
     border-color: aqua;
     color: white;
 }
 
-
+#text-area{
+    white-space: pre-wrap;
+}
 /* media screen 650px */
 
-@media screen and (max-width:650px){
+@media screen and (max-width:650px) {
     .writePost {
         width: 100%;
         height: 120vh;
@@ -87,7 +90,7 @@
         font-weight: 900;
         margin: 20px 0px;
     }
-    
+
     .writePost__wrapper {
         width: 90%;
         margin: auto;
@@ -95,21 +98,21 @@
         border-radius: 10px;
         padding-top: 10px;
     }
-    
+
     .writePost__first h3 {
         text-align: center;
         font-size: 40px;
         margin-top: 30px;
     }
-    
+
     .writePost__middle {
         width: 70%;
         margin: auto;
         padding: 10px;
         font-family: 'Oswald', sans-serif;
-    
+
     }
-    
+
     .writePost__middle form input {
         padding: 20px;
         font: 900;
@@ -117,40 +120,43 @@
         background: #003399;
         color: white !important;
     }
-    
+
     .writePost__middle form input:focus {
         background: #003399;
     }
-    
+
     .writePost__middle form textarea {
         padding: 20px;
         font: 900;
         font-size: 20px;
-        background: #003399;  color: white !important;
-    }
-    
-    .writePost__middle form textarea:focus {
-    
         background: #003399;
         color: white !important;
     }
-    
-    
+
+    .writePost__middle form textarea:focus {
+
+        background: #003399;
+        color: white !important;
+    }
+
     .writePost__middle form button {
         padding: 5px 30px;
-        font-size: 20px;
+        font-size: 15px;
         margin: 10px 5px;
-      text-align: center;
+        text-align: center;
         background: transparent;
         border-radius: 999px;
         background: #003399;
         color: rgb(136, 128, 128);
         transition: linear all 300ms;
     }
-    
-    .writePost__middle form button:hover{
+
+    .writePost__middle form button:hover {
         border-color: aqua;
         color: white;
+    }
+    #text-area{
+        white-space: pre-wrap;
     }
 
 }

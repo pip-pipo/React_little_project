@@ -1,0 +1,42 @@
+.blog{
+   width: 100%;
+   height: auto;
+   background: #003333;
+}
+
+.blog__middle{
+   width: 80%;
+   background: rgb(9, 26, 122);
+   margin: auto;
+   border-radius: 10px;
+   padding: 1rem;
+   border:1px solid rgb(20, 165, 165);
+}
+
+.blogsData{
+   width:90%;
+   margin: auto;
+   height: auto;
+   padding:2rem 0px;
+   border-bottom: 1px solid rgb(8, 101, 189);
+  
+}
+.blogsData span{
+   color: #05ffff;
+}
+.blogsData button{
+   outline-width: 0px;
+   margin:calc(50px - 40px);
+   width: 80px;
+   border-radius: 999px;
+   font-size: large;
+   background: transparent;
+   color: white;
+   transition: all linear 400ms;
+}
+
+
+.blogsData button:hover{
+   background: rgb(3, 37, 148);
+   border-color: aqua;
+}

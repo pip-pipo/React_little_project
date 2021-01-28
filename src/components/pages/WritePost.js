@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './WritePost.css'
 import { AiOutlineCloudUpload } from "react-icons/ai";
 import { Link } from 'react-router-dom'
@@ -22,15 +22,20 @@ const WritePost = () => {
 
     const submitHandle = (e) => {
         e.preventDefault();
-        if(title.length === 0 || tags.length === 0 || author.length === 0 || blog.length === 0){
-        setErr("Please Fill All Fields");
-        setTimeout(()=>{
-            setErr('')
-        },1000)
-        }else{
+        if (title.length === 0 || tags.length === 0 || author.length === 0 || blog.length === 0) {
+            setErr("Please Fill All Fields");
+            setTimeout(() => {
+                setErr('')
+            }, 1000)
+        } else {
             Firebase.firestore().collection('posts').doc(uuid()).set(values)
         }
     }
+    useEffect(() => {
+        var post = document.createElement('p');
+        post.textContent = blog;
+        post.innerHTML = post.innerHTML.replace(/\n/g, '<br>\n');
+    }, [])
 
     return (
         <div className="writePost">
@@ -48,9 +53,9 @@ const WritePost = () => {
                         <input onChange={inputHandle} value={title} type="text" className="form-control my-3" name="title" placeholder="Enter   Title" />
                         <input onChange={inputHandle} value={tags} type="text" className="form-control my-3" name="tags" placeholder="Enter   Related Tags" />
                         <input onChange={inputHandle} value={author} type="text" className="form-control my-3" name="author" placeholder="Enter   Author Name" />
-                        <textarea onChange={inputHandle} value={blog} type="text-area" className="form-control my-3" name="blog" placeholder="Enter   Your Blog" />
+                        <textarea id="text-area" aria-label="Post Content" spellCheck="false" onChange={inputHandle} value={blog} type="text-area" className="form-control my-3" name="blog" placeholder="Enter   Your Blog" />
 
-                        <button onClick={submitHandle}>Publish</button>
+                        <button onClick={submitHandle}> <Link style={{ textDecoration: "none" }} to="/blog">Publish</Link> </button>
                         <button><Link style={{ textDecoration: "none" }} to="/welcome">Back To Profile</Link> </button>
                     </form>
                 </div>
