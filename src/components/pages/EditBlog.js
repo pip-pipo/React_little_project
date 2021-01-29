@@ -56,7 +56,7 @@ const EditBlog = () => {
             <div className="writePost">
                 <div className="writePost__wrapper">
                     <div className="writePost__first">
-                        <h3>Write a Post</h3>
+                        <h3>Edit Post</h3>
                     </div>
                     <div className="writePost__middle">
                         <h4 className="text-danger">{err ? err : ''}</h4>
@@ -69,9 +69,12 @@ const EditBlog = () => {
                             <input onChange={inputHandle} value={tags} type="text" className="form-control my-3" name="tags" placeholder="  Related Tags" />
                             <input onChange={inputHandle} value={author} type="text" className="form-control my-3" name="author" placeholder="  Author Name" />
                             <textarea rows={5} cols={5} style={{ whiteSpace: "pre-line" }} id="text-area" aria-label="Post Content" spellCheck="false" onChange={inputHandle} value={blog} type="text-area" className="form-control my-3" name="blog" placeholder="  Your Blog" />
-
+            
                             <button onClick={submitHandle}> <Link style={{ textDecoration: "none" }} to="/blog">Publish</Link> </button>
-                            <button style={{ textDecoration: "none" }} ><Link to="/welcome">Back To Profile</Link> </button>
+                            <button ><Link style={{ textDecoration: "none" }}  to="/welcome">Back To Profile</Link> </button>
+                       
+                       
+                       
                         </form>
                     </div>
                 </div>

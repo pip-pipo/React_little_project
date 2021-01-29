@@ -32,31 +32,6 @@ const WritePost = () => {
         }
     }
 
-    // console.log(blog);
-    // const replaceData = blog;
-    // replaceData.replace(/\n/g, '<br>\n')
-    // console.log(replaceData);
-
-    // function onTestChange() {
-
-    //     var key = window.event.keyCode;
-    
-    //     // If the user has pressed enter
-    //     if (key === 13) {
-    //         const valuedata = document.getElementById("text-area").value;
-    //         valuedata.replace(/\n/g, '<br>\n')
-    //     }
-    //     else {
-    //         return true;
-    //     }
-    // }
-
-    
-    // if(blog){
-    //     const textArea = document.querySelector('#text-area');
-    //     textArea.addEventListener('keypress',onTestChange)
-    // }
-
 
     return (
         <div className="writePost">
@@ -77,7 +52,7 @@ const WritePost = () => {
                         <textarea rows={5} cols={5} style={{whiteSpace:"pre-line"}} id="text-area" aria-label="Post Content" spellCheck="false" onChange={inputHandle} value={blog} type="text-area" className="form-control my-3" name="blog" placeholder="  Your Blog" />
 
                         <button onClick={submitHandle}> <Link style={{ textDecoration: "none" }} to="/blog">Publish</Link> </button>
-                        <button style={{ textDecoration: "none" }} ><Link  to="/welcome">Back To Profile</Link> </button>
+                        <button  ><Link style={{ textDecoration:"none" }} to="/welcome">Back To Profile</Link> </button>
                     </form>
                 </div>
             </div>

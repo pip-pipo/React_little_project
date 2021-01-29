@@ -1,4 +1,7 @@
-<h1 align="center">React_social_media_platform</h1>
+<h1 align="center">
+
+[React_social_media_platform](https://laughing-swanson-750b20.netlify.app/)
+</h1>
 
 <div align="center" id="top"> 
   <img src="./src/components/Img/img.png" alt="React_codeing_social_platform" />
@@ -7,6 +10,7 @@
   <!-- <a href="https://react_codeing_social_platform.netlify.app">Demo</a> -->
 </div>
 
+## [current Version ](https://laughing-swanson-750b20.netlify.app/)
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/pip-pipo/React_little_project?color=56BEB8">

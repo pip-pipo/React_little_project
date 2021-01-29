@@ -28,13 +28,14 @@ const Blog = () => {
                     loading ? <h2>Loading....</h2> : <div>
                         {
                             value.map((getData) => (
-                                <div className="blogsData" style={{whiteSpace:"pre-line"}} >
+                                <div className="blogsData" style={{whiteSpace:"pre-line",wordBreak:"break-word",fontFamily:"monospace"}} >
                                     <h3><span>Title: </span>{getData.title}</h3>
                                     <h5><span>Author: </span>{getData.author}</h5>
                                     <h3 ><span>Blog: </span>{getData.blog}</h3>
                                     <h5 style={{marginTop:'20px'}}><span>Tags: </span>{getData.tags}</h5>
                                     <button style={{outline:"none"}} onClick={() => deleteHandle(getData.id)}>Delete</button>
                                     <button style={{outline:"none"}}><Link to={`/editBlog/${getData.id}`} style={{textDecoration:"none" ,color:"white"}}>Edit</Link></button>
+                                 
                                 </div>
                             ))
                         }
